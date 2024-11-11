@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/apply.css" />
+  <link rel="stylesheet" href="assets/css/resume.css">
+
   <link rel="stylesheet" href="assets/css/responsive.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
@@ -367,55 +369,79 @@
           </div>
 
           <div class="popup_titles">
-            <h1>suggest new opportunities</h1>
+            <h1>
+              add your <br />
+              resume
+            </h1>
             <p>
-              Identifying unmet needs or gaps in a field where you can offer a
-              solution or service.
+              use our uploader to save your resume and reach thousands of
+              active employers
             </p>
           </div>
-          <form>
-            <div class="input_feild">
-              <p>Name</p>
-              <input placeholder="Name" name="fname" required />
-            </div>
 
-            <div class="input_feild">
-              <p>Phone Number</p>
-              <input type="tel" placeholder="Phone Number" class="phoneNumber" required />
-            </div>
-
-            <div class="input_feild">
-              <p>Email</p>
-              <input type="email" placeholder="Email" required />
-            </div>
-            <div class="input_feild">
-              <p>Major</p>
-              <div class="tag_container">
-                <input type="text" id="majorInput" placeholder="Select major" list="majors" />
-                <datalist id="majors">
-                  <option value="Computer Science"></option>
-                  <option value="Design"></option>
-                  <option value="Graphic Design"></option>
-                  <option value="Video Editing"></option>
-                  <!-- Add more options as needed -->
-                </datalist>
+          <form action="">
+            <h3>Upload Your Cv</h3>
+            <div class="main_upload_new">
+              <div class="drop_zone_new" id="uploadBoxNew">
+                <div class="upload_content_new">
+                  <i class="fa-solid fa-cloud-upload-alt"></i>
+                  <p>
+                    <a href="#" id="uploadLinkNew">Click to Upload</a>
+                    Or Drag And Drop
+                  </p>
+                  <input type="file" id="fileInputNew" multiple hidden />
+                </div>
               </div>
             </div>
 
-            <div class="input_feild">
-              <p>Country</p>
-              <select id="countries" class="countries">
-                <option value="" selected disabled>Select Country</option>
-              </select>
-            </div>
-            <div class="apply-form_bottom">
-              <div class="checkbox_container">
-                <input type="checkbox" id="subscribe" required />
-                <label for="subscribe">Stay informed and take control of your future. Subscribe
-                  now and receive updates on exciting new opportunities in
-                  your field!</label>
+            <div class="more_info">
+              <h3>Tell Us More About You</h3>
+              <div class="flex-apply">
+                <div class="apply_input_feild">
+                  <p>First Name</p>
+                  <input placeholder="First Name" name="fname" required />
+                </div>
+                <div class="apply_input_feild">
+                  <p>Date of Birth</p>
+                  <input type="date" name="dob" required />
+                </div>
               </div>
-              <button type="submit">Apply</button>
+              <div class="flex-apply">
+                <div class="apply_input_feild">
+                  <p>Phone Number</p>
+                  <input id="phoneNumber" class="phoneNumber" type="tel" name="phone" placeholder="Phone number"
+                    required />
+                </div>
+                <div class="apply_input_feild">
+                  <p>Email</p>
+                  <input type="email" placeholder="Email" required />
+                </div>
+              </div>
+              <div class="flex-apply">
+                <div class="apply_input_feild">
+                  <p>Major</p>
+                  <div class="tag_container">
+                    <input type="text" id="majorInput" placeholder="Select major" list="majors" />
+                    <datalist id="majors">
+                      <option value="Computer Science"></option>
+                      <option value="Design"></option>
+                      <option value="Graphic Design"></option>
+                      <option value="Video Editing"></option>
+                      <!-- Add more options as needed -->
+                    </datalist>
+                  </div>
+                </div>
+              </div>
+
+              <div class="apply-form_bottom">
+                <div class="checkbox_container">
+                  <input type="checkbox" id="subscribe" required />
+                  <label for="subscribe">Stay informed and take control of your future. Subscribe
+                    now and receive updates on exciting new opportunities in
+                    your field!</label>
+                </div>
+                <button type="submit">Apply</button>
+              </div>
             </div>
           </form>
         </div>
@@ -568,6 +594,7 @@
   <script src="assets/js/swiper-bundle.min.js"></script>
   <!-- Js file -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/apply.js"></script>
 </body>
 
 </html>

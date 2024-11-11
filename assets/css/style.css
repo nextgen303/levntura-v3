@@ -1220,10 +1220,10 @@ header .btn {
 }
 
 .venture_heading p {
-  padding-top: 5rem;
+  padding-top: 3rem;
   font-size: var(--link);
   font-family: var(--gelion-regular);
-  width: 40%;
+  width: 54%;
   color: #2d0505;
 }
 
@@ -1312,16 +1312,20 @@ header .btn {
 .venture_top .venture_details h2,
 .venture_down .venture_details h2 {
   font-size: var(--h2);
-  font-family: var(--gelion-light);
-  width: 65%;
+  font-family: var(--gelion-bold);
+  width: 55%;
   line-height: 34px;
-}
 
+}
+.venture_down .venture_details h2 {
+  width: 69%;
+
+}
 .venture_top .venture_details p,
 .venture_down .venture_details p {
   font-size: var(--link);
   font-family: var(--gelion-light);
-  width: 70%;
+  width: 91%;
   color: #2d0505;
 }
 
@@ -2497,7 +2501,8 @@ header .btn {
 .footer .bottom_logo {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 99%;
+  left: 10px;
 }
 
 /* --------------------------------------- Home Page END ----------------------------------------------- */
@@ -3367,7 +3372,7 @@ header .btn {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .about_more-content h2 {
@@ -4447,7 +4452,7 @@ input#phoneNumber,
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 130px;
+  margin-top: 230px;
   transition: background-color 0.3s ease;
 }
 
@@ -4525,7 +4530,7 @@ input#phoneNumber,
 
 /* --------------------- Programe Container ------------------------ */
 .program_container {
-  max-width: 1366px;
+  max-width: 1330px;
   margin: 0 auto;
 }
 
@@ -4994,7 +4999,7 @@ input#phoneNumber,
 }
 
 .section_six_card {
-  width: 30%;
+  width: 25%;
 }
 
 .rounded {
@@ -5878,6 +5883,7 @@ input[type="number"]::placeholder {
   padding-top: 1rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .inner_world_content{
   max-width: 1040px;
@@ -6092,7 +6098,7 @@ input[type="number"]::placeholder {
 }
 
 .all_programs_content {
-  max-width: 1366px;
+  max-width: 1330px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6151,7 +6157,7 @@ input[type="number"]::placeholder {
   margin: 0 auto;
 }
 .all_programs_main_container {
-  max-width: 1366px;
+  max-width: 1330px;
   margin: 0 auto;
 }
 
@@ -6313,7 +6319,7 @@ input[type="number"]::placeholder {
 }
 
 .all_programs_card {
-  max-width: 430px;
+  max-width: 420px;
   height: 580px;
   background-color: #f5f6f7;
   -webkit-box-shadow: 0px 4px 8px #00000015;
@@ -7870,4 +7876,93 @@ button#openFormButton:hover{
 
 .mail_box input{
   font-size: 14px !important;
+}
+
+/* new css */
+@media (min-width:1300px) and (max-width:1600px){
+  .card__container_two {
+    margin-top: 4rem;
+    margin-left: 14rem !important;
+}
+.about_left_content {
+  padding-left: 20px;
+}
+.about_bottom_content {
+  width: 80%;
+}
+.about_more_bottom .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_more-content {
+  padding-left: 8rem;
+}
+.about_more-content h2,
+.about_more-content h1 {
+  width: 90%;
+}
+}
+
+
+.leftSpaceRemove{
+  margin-left: 0px !important;
+}
+.ventureCardAnimtaion{
+  transition: .3s;
+}
+.ventureCardAnimtaion:hover{
+  transform: translateX(-80px);
+}
+
+#fullscreenModal {
+  user-select: none;         
+  -webkit-user-drag: none;   
+}
+
+#fullscreenModal img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.tag_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#selectedMajors {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  color: black;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+.tag .remove-tag {
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#majorInput {
+  border: none;
+  outline: none;
+  padding: 5px;
+  flex: 1;
+  min-width: 100px;
 }

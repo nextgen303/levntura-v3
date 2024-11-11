@@ -20,7 +20,7 @@
   }
 
   .left__card p {
-    width: 785px;
+    width: 675px;
     font-size: var(--p);
     color: #0c0f11;
     opacity: 0.5;
@@ -33,7 +33,7 @@
     font-weight: 900;
     line-height: 45px;
     padding-bottom: 18px;
-    width: 785px;
+    width: 675px;
   }
 
   .title {
@@ -49,7 +49,9 @@
     gap: 25px;
     color: #002d2d;
   }
+ 
 }
+
 
 @media screen and (max-width: 1400px) {
 
@@ -61,6 +63,9 @@
   .container {
     padding: 20px;
   }
+  .left_part {
+    margin-left: 2rem;
+}
 }
 
 @media screen and (max-width: 1315px) {
@@ -320,7 +325,9 @@
   .gallery_hedings h1 {
     width: 70%;
   }
-
+  input#blogPhoneNumber {
+    width: 100% !important;
+}
   .gallery_hedings p {
     width: 60%;
   }
@@ -615,9 +622,9 @@
   .section_six_title h1,
   .join_fb_level_two h1,
   .programe_title h1 {
-    font-size: 58px;
+    font-size: 48px;
     text-transform: uppercase;
-    line-height: 58px;
+    line-height: 1.2em;
     width: 100%;
   }
 
@@ -654,9 +661,9 @@
 
   /* ----------------------- Section Five ------------------------- */
   .venture_heading h1 {
-    font-size: 48px;
+    font-size: 38px;
     width: 100%;
-    line-height: 48px;
+    line-height: 1.2em;
   }
 
   .venture_top .venture_details p,
@@ -995,7 +1002,460 @@
   }
 }
 
+@media (min-width:768px) and (max-width:1023px) {
+  .footer_content .short_links {
+    margin-top: 0px !important;
+  }
+
+  .all_programs_card {
+    max-width: 335px;
+    height: 558px;
+    background-color: #f5f6f7;
+    -webkit-box-shadow: 0px 4px 8px #00000015;
+    box-shadow: 0px 4px 8px #00000015;
+}
+
+.all_programs_card .programs_card_img {
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.all_programs_card .programs_card_img img{
+  min-height: 220px;
+}
+}
+
+@media only screen and (max-width:767px) {
+  .footer_content .short_links {
+    margin-top: 0px !important;
+  }
+
+  .swiper-container-one {
+    margin-top: 22rem;
+    margin-left: 1rem !important;
+  }
+
+
+  .program_content_max {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .container .program_title h1 {
+    text-align: start;
+    line-height: 1em;
+  }
+
+  .container .program_title a {
+    color: #002d2d;
+    width: 150px;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .swiper.sample-slider.brand_content.swiper-initialized.swiper-horizontal.swiper-ios {
+    margin-left: 1rem;
+  }
+
+  .venture_heading .left_side {
+    margin-left: 0px;
+  }
+
+  .counter_content {
+    gap: 4rem;
+  }
+
+  .about_right_img {
+    width: 95%;
+  }
+
+  .about_hero_left {
+    padding-left: 1rem;
+  }
+
+  .education_left {
+    padding-left: 0px;
+  }
+
+  .education_right {
+    padding: 3rem 0rem 0rem 0rem;
+    margin-bottom: -1rem;
+  }
+
+  .founder_info {
+    width: 100%;
+    margin: 0px 0px 0px -15px;
+  }
+
+  .mission_top .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .mission_top .large_title {
+    padding-left: 1rem;
+  }
+
+  .mission_top .small_title {
+    padding: 3rem 1rem;
+  }
+
+  .mission-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mission-article p,
+  .mission-article article {
+    width: 100% !important;
+  }
+
+  .country {
+    position: absolute;
+    left: 0.5rem;
+    bottom: -5.5rem;
+  }
+
+  .image_showcase {
+    height: 1408px;
+  }
+
+  .image_post .top_one {
+    left: -2rem;
+    top: 5rem;
+    width: 50%;
+  }
+
+  .image_post .bottom_one {
+    bottom: 9rem;
+    left: -7rem;
+    width: 50%;
+  }
+
+  .image_post .bottom_two {
+    right: -3rem;
+    bottom: 2rem;
+    width: 50%;
+  }
+
+  /* gallery start */
+  .gallery_section .container {
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .gallery_images .container {
+    padding: 0 0rem;
+    width: 100%;
+  }
+
+  .form_right .form_right_container {
+    height: 655px;
+    margin-bottom: 5rem;
+    background: #fff;
+  }
+
+
+  /* blog start */
+  .blog_content .blog_title {
+    padding-top: 10rem;
+  }
+
+  .right_blog_details {
+    border-bottom: 0px solid #eaeaea !important;
+    padding-bottom: 0rem;
+  }
+
+  .blog_map_bg {
+    background-size: 220%;
+  }
+
+  .blog_map_bg:hover {
+    background-size: 220%;
+  }
+
+  /* blog single */
+ 
+  .bio {
+    margin-top: 8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+  .bio_right {
+    margin-top: -7rem;
+    width: 226px;
+  }
+
+  .bio .world_social_links {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .world_last .knowledge_heading {
+    flex-direction: column;
+    margin-bottom: -5rem;
+  }
+
+  .world_last .knowledge__container {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  /* program page */
+  .program_members {
+    padding-bottom: 2rem;
+  }
+
+  .program_member_cards {
+    margin: -5rem 0rem 5rem;
+  }
+
+  .member_card_one {
+    top: 7rem;
+    left: 10%;
+    rotate: 13deg;
+  }
+
+  .member_card_one .member_info h3,
+  .member_card_two .member_info h3 {
+    font-size: 18px;
+    font-family: var(--gelion-light);
+  }
+
+  .member_card_two {
+    margin-left: 8rem;
+  }
+
+  .program_title h1 {
+    width: 100%;
+  }
+
+  .programe_three_title p {
+    text-align: center;
+  }
+
+  .program_container .program_title {
+    padding-bottom: 0rem;
+  }
+
+  .rounded_content h6 {
+    font-weight: 400;
+  }
+
+  .program_three p {
+    text-align: center;
+  }
+
+  .program_three p {
+    text-align: start;
+  }
+
+  .photo-grid .container .grid-content {
+    overflow: hidden !important;
+  }
+
+  .gallery-content h1 {
+    line-height: 1.2;
+    font-size: 40px;
+  }
+
+  .program_image_showcase {
+    height: 650px;
+  }
+
+  .innerImageShowcase {
+    height: 100%;
+  }
+
+  .showcase_heading_left {
+    margin-left: -2rem;
+    margin-right: -1rem;
+  }
+
+  .images .top_one {
+    top: -3rem;
+  }
+
+  .images .top_two {
+    top: -4rem;
+  }
+
+  .program_title h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .program_title .small__heading .main_heading .start_btn {
+    width: 126px;
+    gap: 9px;
+    align-self: start;
+  }
+
+  .program_title .small__heading .main_heading .start_btn i {
+    padding: 10px;
+  }
+
+
+
+
+
+  .apply_main {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+
+  .apply_titles p {
+    width: 100%;
+  }
+
+  .innerApplyMain {
+    width: 100%;
+  }
+
+  .apply_card .top_part {
+    overflow: hidden;
+    display: none;
+  }
+
+  .apply_card_content {
+    flex-direction: column;
+  }
+
+  .apply_card_right {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .apply_card_right a:first-child {
+    display: flex;
+    justify-content: end;
+  }
+
+  .apply_card_right .apply_buttons {
+    flex-direction: row !important;
+    gap: 0;
+  }
+
+  .apply_card_right .apply_buttons .btn-2 {
+    margin-left: 20px;
+  }
+
+  .releted_program_title h1 {
+    padding: 0 8rem;
+  }
+
+  .program_card__image {
+    width: 100%;
+    height: 450px;
+  }
+
+  .releted_card__container .card__article {
+    max-width: 80%;
+  }
+
+  .innerFooterTop {
+    display: inline-block;
+  }
+
+  .innerFtr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 3rem 1rem;
+    background: url("../images/join_team/half-circle.png") center no-repeat;
+    background-size: cover;
+  }
+
+  .ftl img {
+    height: 222px;
+  }
+
+  .ftr {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: .3s;
+  }
+
+
+  /* contact start */
+  .contactBannerTitleDesktop {
+    display: none;
+  }
+
+  .contactBannerTitleMobile {
+    display: block;
+  }
+
+  .contact_social_link .social_link_bottom a {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    width: 36px;
+    border-radius: 50px;
+  }
+
+  .contact_right {
+    height: 515px;
+  }
+
+  .apply_main_content_two {
+    margin-left: 0px;
+  }
+
+  .flex-apply {
+    flex-direction: column;
+  }
+
+  .apply_input_feild #phoneNumber,
+  .iti--allow-dropdown input {
+    padding-left: 57px;
+    width: 365px !important;
+    margin-top: 8px !important;
+  }
+
+  /* closes responsive */
+
+  /* new css */
+  .testimonial_content .left_content {
+    padding-left: 0rem;
+}
+.main_card_content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 2rem 0rem;
+}
+
+.join_team_main .left_part {
+  margin-top: 13rem;
+  margin-left: 0rem;
+}
+
+.contact_right .contactForm input, .contactForm select {
+  width: 100% !important;
+  border: 1px solid #70707019;
+  padding: 14px;
+  background: transparent;
+  font-family: var(--gelion-regular);
+}
+.contact_right input#phoneNumber {
+  width: 263px !important;
+}
+}
+
+
+
+
 @media screen and (max-width: 750px) {
+
+  .header{
+    max-width: 100%;
+    
+  }
   .card__container {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
@@ -1014,6 +1474,34 @@
     gap: 2rem;
   }
 
+
+  .gallery_hedings h1 {
+    width: 90%;
+    font-size: 38px;
+}
+ 
+  .galleryForm input, .galleryForm select {
+    width: 290px !important;
+    border: 1px solid #fff;
+}
+
+.form_right .form_right_container {
+  background-color: #f5f6f7;
+  padding: 1.3rem;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.showcase_part_right h2, .showcase_part_mob h2, .form_right .form_right_container h2 {
+  font-size: var(--h2);
+  font-family: var(--gelion-semibold);
+  line-height: 34px;
+  width: 100%;
+}
+.contact_us_btn{
+  margin-top: 0px;
+}
   /* --------------------------- Section Three ------------------------ */
 
   .about__bottom {
@@ -1066,12 +1554,16 @@
   .small_title h1 {
     width: 100%;
     color: #002d2d;
+    font-size: 42px;
+    line-height: 1.2em;
   }
 
   .knowledge__container {
     margin-top: 2rem;
   }
-
+  .programs_card.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    margin-left: 1rem;
+}
   /* ----------------------------- Media Section ------------------------ */
   .media_heading {
     -webkit-box-orient: vertical;
@@ -1147,9 +1639,12 @@
   }
 
   .testimonial_content .left_content {
-    padding-left: 1rem;
+    padding-left: 0rem;
   }
-
+  .testimonial_content .left_content h1 {
+    font-size: 47px;
+    line-height: 1em;
+}
   .review_card__text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1165,11 +1660,12 @@
     -ms-flex-pack: center;
     justify-content: center;
     gap: 1rem;
+    margin-left: 0rem;
   }
 
   .review_card__text .blank-box {
     height: 90px;
-    width: 316px;
+    width: 100%;
     background-color: var(--white);
     opacity: 0.2;
   }
@@ -1184,7 +1680,7 @@
   .review_card__text .feed_back {
     padding: 1rem;
     height: 371px;
-    width: 316px;
+    width: 90% !important;
     background-color: var(--white);
     color: var(--black);
     display: -webkit-box;
@@ -1201,7 +1697,11 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-
+  .showcase_heading h1 {
+    width: 95%;
+    font-size: 40px;
+    line-height: 1.2;
+}
   /* ----------------------- About Section Two ---------------------- */
 
   .education {
@@ -1431,8 +1931,9 @@
   }
 
   .bio {
-    padding-left: 2rem;
-  }
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
   .top_content .right_part .top_img img {
     display: none;
@@ -1543,7 +2044,7 @@
     --h6: 14px;
     --text: 15px;
     --p: 16px;
-    --link: 12px;
+    --link: 15px;
   }
 
   h1 {
@@ -1588,7 +2089,12 @@
     -ms-flex-align: self-start;
     align-items: self-start;
   }
-
+  .apply_input_feild #phoneNumber,
+  .iti--allow-dropdown input {
+    padding-left: 57px;
+    width: 350px !important;
+    margin-top: 8px !important;
+  }
   .home-heading {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
@@ -1598,7 +2104,7 @@
   }
 
   .stroke_text {
-    line-height: 32px;
+    line-height: 1em;
     font-size: var(--h1);
   }
 
@@ -1768,8 +2274,13 @@
 
   .venture_top .venture_details,
   .venture_down .venture_details {
-    width: 90%;
+    width: 100%;
     height: 250px;
+  
+  }
+  .venture_top .venture_details {
+
+    margin-left: -1rem;
   }
 
   .venture_down:nth-child(2) .venture_details {
@@ -1792,9 +2303,9 @@
   .media_heading h1,
   .campus_heading .campus_heading_large h1,
   .share_heading h1 {
-    font-size: 48px;
-    line-height: 48px;
-    width: 90%;
+    font-size: 38px;
+    line-height: 1.2em;
+    width: 100%;
   }
 
   .middle_part .heading_btn_part {
@@ -1854,7 +2365,44 @@
   .testimonial_content {
     gap: 0rem;
   }
-
+  .news_box_left .news_box_article {
+    width: 100%;
+    margin-left: 0px;
+    padding-bottom: 10px;
+}
+.news_box_left .news_box_article p {
+  font-size: 18px;
+  line-height: 21px;
+  opacity: 0.2;
+  color: var(--about-primary-color);
+}
+.level_one_title h1 {
+  font-size: var(--h1);
+  font-family: var(--gelion-black);
+  line-height: 48px;
+  color: var(--about-primary-color);
+  margin-bottom: 20px;
+}
+.share {
+  padding: 7rem 0rem;
+}
+.campus_heading {
+  margin-left: 0rem;
+}
+.middle_part .heading_btn_part p, .heading_btn_part p {
+  font-size: var(--link);
+  font-family: var(--gelion-regular);
+  line-height: 16px;
+  color: #2d0505;
+  width: 100%;
+}
+.news_updates_content .level_one_title {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding-bottom: 2rem;
+  flex-direction: column;
+}
   .review_card__text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1866,7 +2414,7 @@
     -webkit-box-align: self-start;
     -ms-flex-align: self-start;
     align-items: self-start;
-    margin-left: 1rem;
+    margin-left: 0rem;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1875,14 +2423,14 @@
 
   .review_card__text .blank-box {
     height: 90px;
-    width: 316px;
+    width: 90%;
     background-color: var(--white);
     opacity: 0.2;
   }
 
   .review_card__text .blank-box_2 {
     height: 531px;
-    width: 316px;
+    width: 90%;
     background-color: var(--white);
     opacity: 0.2;
   }
@@ -1890,7 +2438,7 @@
   .review_card__text .feed_back {
     padding: 1rem;
     height: 371px;
-    width: 316px;
+    width: 90%;
     background-color: var(--white);
     color: var(--black);
     display: -webkit-box;
@@ -1909,9 +2457,7 @@
   }
 
   /* --------------------------- Section Eleven --------------------- */
-  .showcase_heading h1 {
-    width: 80%;
-  }
+ 
 
   .images .top_one {
     left: -3rem;
@@ -2193,11 +2739,7 @@
 
   /* --------------------------------------- Gallery Page Start ----------------------------------------------- */
 
-  .gallery_hedings h1 {
-    width: 90%;
-    font-size: var(--h1);
-    list-style: 48px;
-  }
+ 
 
   .gallery_hedings p {
     width: 80%;
@@ -2355,10 +2897,12 @@
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 150px;
-    padding-right: 3rem;
+    padding-right: 2rem;
     position: relative;
   }
-
+  .rounded_image{
+    padding: 2rem;
+  }
   .rounded_content {
     height: 250px;
     width: 250px;
@@ -2400,13 +2944,13 @@
   .slider_three_card {
     height: auto;
     max-width: 316px;
-    width: 314px;
+    width: 100%;
   }
 
   .slider_three_card .program_three__image {
     height: 454px;
     max-width: 316px;
-    width: 316px;
+    width: 100%;
   }
 
   .program_four {
@@ -2921,6 +3465,22 @@
     padding-bottom: 10rem;
   }
 
+
+  /* new css */
+  .image_box_card {
+    padding: 1rem;
+    height: 270px;
+    width: 96%;
+}
+.mission {
+  padding: 0rem 0;
+  background-color: var(--bg-three);
+}
+.world_content {
+  flex-direction: column;
+}
+
+
 }
 
 @media screen and (max-width: 550px) {
@@ -2972,7 +3532,12 @@
     align-items: flex-start;
     gap: 2rem;
   }
-
+  .apply_input_feild #phoneNumber,
+  .iti--allow-dropdown input {
+    padding-left: 57px;
+    width: 350px !important;
+    margin-top: 8px !important;
+  }
 
   /* ------------------------ Contact page Start --------------------- */
 
@@ -3058,10 +3623,15 @@
   }
 
   .card__text {
-    top: -10%;
+    top: -6%;
     height: auto;
     padding-bottom: 10rem;
   }
+
+  .places .card__container {
+    margin-top: 22rem;
+}
+
 
   .main_heading {
     margin-top: 0rem;
@@ -3242,18 +3812,44 @@
   .releted_program_title .subttitle .line {
     max-width: 110px;
   }
+
+
+  /* new css */
+  .container .program_title a {
+    color: #002d2d;
+    width: 155px !important;
+    margin-top: -42px;
+    position: absolute;
+    right: 1px;
+}
+}
+
+@media (min-width:400px) and (max-width: 450px) {
+  .places .card__container {
+      margin-top: 25rem;
+  }
 }
 
 @media screen and (max-width: 380px) {
   .home__content {
     padding-top: 60%;
     padding-bottom: 40%;
+    margin-left: -1.3rem;
   }
-
+  .apply_input_feild #phoneNumber,
+  .iti--allow-dropdown input {
+    padding-left: 57px;
+    width: 350px !important;
+    margin-top: 8px !important;
+  }
   .places .card__container {
-    margin-top: 10rem;
+    margin-top: 21rem;
   }
-
+  .card__text {
+    top: -6%;
+    height: auto;
+    padding-bottom: 10rem;
+}
   /* ------------------------ Contact page Start --------------------- */
 
   .contact_right_bottom {
@@ -3276,421 +3872,30 @@
   .releted_program_title .subttitle .line {
     max-width: 90px;
   }
-}
 
-@media only screen and (max-width:767px) {
-  .footer_content .short_links {
-    margin-top: 0px !important;
-  }
-
-  .swiper-container-one {
-    margin-top: 22rem;
-    margin-left: 1rem !important;
-  }
-
-
-  .program_content_max {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 40px;
-  }
-
-  .container .program_title h1 {
-    text-align: start;
-    line-height: 1em;
-  }
 
   .container .program_title a {
     color: #002d2d;
-    width: 150px;
-    margin-left: -30px;
-    margin-top: -30px;
-  }
-
-  .swiper.sample-slider.brand_content.swiper-initialized.swiper-horizontal.swiper-ios {
-    margin-left: 1rem;
-  }
-
-  .venture_heading .left_side {
-    margin-left: 0px;
-  }
-
-  .counter_content {
-    gap: 4rem;
-  }
-
-  .about_right_img {
-    width: 95%;
-  }
-
-  .about_hero_left {
-    padding-left: 1rem;
-  }
-
-  .education_left {
-    padding-left: 0px;
-  }
-
-  .education_right {
-    padding: 3rem 0rem 0rem 0rem;
-    margin-bottom: -1rem;
-  }
-
-  .founder_info {
-    width: 100%;
-    margin: 0px 0px 0px -15px;
-  }
-
-  .mission_top .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .mission_top .large_title {
-    padding-left: 1rem;
-  }
-
-  .mission_top .small_title {
-    padding: 3rem 1rem;
-  }
-
-  .mission-article {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mission-article p,
-  .mission-article article {
-    width: 100% !important;
-  }
-
-  .country {
+    width: 155px !important;
+    margin-top: -42px;
     position: absolute;
-    left: 0.5rem;
-    bottom: -5.5rem;
-  }
-
-  .image_showcase {
-    height: 1408px;
-  }
-
-  .image_post .top_one {
-    left: -2rem;
-    top: 5rem;
-    width: 50%;
-  }
-
-  .image_post .bottom_one {
-    bottom: 9rem;
-    left: -7rem;
-    width: 50%;
-  }
-
-  .image_post .bottom_two {
-    right: -3rem;
-    bottom: 2rem;
-    width: 50%;
-  }
-
-  /* gallery start */
-  .gallery_section .container {
-    padding: 0 1rem;
-    width: 100%;
-  }
-
-  .gallery_images .container {
-    padding: 0 0rem;
-    width: 100%;
-  }
-
-  .form_right .form_right_container {
-    height: 655px;
-    margin-bottom: 5rem;
-    background: #fff;
-  }
-
-
-  /* blog start */
-  .blog_content .blog_title {
-    padding-top: 10rem;
-  }
-
-  .right_blog_details {
-    border-bottom: 0px solid #eaeaea !important;
-    padding-bottom: 0rem;
-  }
-
-  .blog_map_bg {
-    background-size: 220%;
-  }
-
-  .blog_map_bg:hover {
-    background-size: 220%;
-  }
-
-  /* blog single */
-  .bio {
-    padding-left: 0rem;
-    margin-top: 8rem;
-  }
-
-  .bio_right {
-    margin-top: -7rem;
-    width: 226px;
-  }
-
-  .bio .world_social_links {
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .world_last .knowledge_heading {
-    flex-direction: column;
-    margin-bottom: -5rem;
-  }
-
-  .world_last .knowledge__container {
-    width: 100%;
-    margin-top: 3rem;
-  }
-
-  /* program page */
-  .program_members {
-    padding-bottom: 2rem;
-  }
-
-  .program_member_cards {
-    margin: -5rem 0rem 5rem;
-  }
-
-  .member_card_one {
-    top: 7rem;
-    left: 10%;
-    rotate: 13deg;
-  }
-
-  .member_card_one .member_info h3,
-  .member_card_two .member_info h3 {
-    font-size: 18px;
-    font-family: var(--gelion-light);
-  }
-
-  .member_card_two {
-    margin-left: 8rem;
-  }
-
-  .program_title h1 {
-    width: 100%;
-  }
-
-  .programe_three_title p {
-    text-align: center;
-  }
-
-  .program_container .program_title {
-    padding-bottom: 0rem;
-  }
-
-  .rounded_content h6 {
-    font-weight: 400;
-  }
-
-  .program_three p {
-    text-align: center;
-  }
-
-  .program_three p {
-    text-align: start;
-  }
-
-  .photo-grid .container .grid-content {
-    overflow: hidden !important;
-  }
-
-  .gallery-content h1 {
-    line-height: 50px;
-  }
-
-  .program_image_showcase {
-    height: 650px;
-  }
-
-  .innerImageShowcase {
-    height: 100%;
-  }
-
-  .showcase_heading_left {
-    margin-left: -2rem;
-    margin-right: -1rem;
-  }
-
-  .images .top_one {
-    top: -3rem;
-  }
-
-  .images .top_two {
-    top: -4rem;
-  }
-
-  .program_title h1 {
-    width: 100%;
-    text-align: center;
-  }
-
-  .program_title .small__heading .main_heading .start_btn {
-    width: 126px;
-    gap: 9px;
-    align-self: center;
-  }
-
-  .program_title .small__heading .main_heading .start_btn i {
-    padding: 10px;
-  }
-
-
-
-
-
-  .apply_main {
-    padding-right: 0rem;
-    padding-left: 0rem;
-  }
-
-  .apply_titles p {
-    width: 100%;
-  }
-
-  .innerApplyMain {
-    width: 100%;
-  }
-
-  .apply_card .top_part {
-    overflow: hidden;
-    display: none;
-  }
-
-  .apply_card_content {
-    flex-direction: column;
-  }
-
-  .apply_card_right {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .apply_card_right a:first-child {
-    display: flex;
-    justify-content: end;
-  }
-
-  .apply_card_right .apply_buttons {
-    flex-direction: row !important;
-    gap: 0;
-  }
-
-  .apply_card_right .apply_buttons .btn-2 {
-    margin-left: 20px;
-  }
-
-  .releted_program_title h1 {
-    padding: 0 8rem;
-  }
-
-  .program_card__image {
-    width: 100%;
-    height: 450px;
-  }
-
-  .releted_card__container .card__article {
-    max-width: 80%;
-  }
-
-  .innerFooterTop {
-    display: inline-block;
-  }
-
-  .innerFtr {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 3rem 1rem;
-    background: url("../images/join_team/half-circle.png") center no-repeat;
-    background-size: cover;
-  }
-
-  .ftl img {
-    height: 222px;
-  }
-
-  .ftr {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    transition: .3s;
-  }
-
-
-  /* contact start */
-  .contactBannerTitleDesktop {
-    display: none;
-  }
-
-  .contactBannerTitleMobile {
-    display: block;
-  }
-
-  .contact_social_link .social_link_bottom a {
-    border: 1px solid rgb(255, 255, 255);
-    padding: 8px;
-    width: 36px;
-    border-radius: 50px;
-  }
-
-  .contact_right {
-    height: 515px;
-  }
-
-  .apply_main_content_two {
-    margin-left: 0px;
-  }
-
-  .flex-apply {
-    flex-direction: column;
-  }
-
-  .apply_input_feild #phoneNumber,
-  .iti--allow-dropdown input {
-    padding-left: 57px;
-    width: 365px !important;
-    margin-top: 8px !important;
-  }
-
-  /* closes responsive */
+    right: 1px;
+}
+.left__card h1 {
+  font-size: 29px;
+  line-height: 1.2;
+  padding-bottom: 18px;
 }
 
-
-@media (min-width:768px) and (max-width:1023px) {
-  .footer_content .short_links {
-    margin-top: 0px !important;
+.venture_down {
+  margin-top: 11rem;
+}
+}
+@media (min-width:365px) and (max-width:375px){
+  .venture_down {
+    margin-top: 9rem;
   }
-
-  .all_programs_card {
-    max-width: 335px;
-    height: 558px;
-    background-color: #f5f6f7;
-    -webkit-box-shadow: 0px 4px 8px #00000015;
-    box-shadow: 0px 4px 8px #00000015;
-}
-
-.all_programs_card .programs_card_img {
-  height: 220px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.all_programs_card .programs_card_img img{
-  min-height: 220px;
+  .places .card__container {
+    margin-top: 21rem;
 }
 }

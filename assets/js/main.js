@@ -1,4 +1,5 @@
 
+
 // country code and flag 
 const phoneNumberInput = document.querySelectorAll(".phoneNumber");
 for (let i = 0; i < phoneNumberInput.length; i++) {
@@ -879,6 +880,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
 function showPopup() {
   document.getElementById("popupForm").style.display = "flex";
 
@@ -941,5 +944,11 @@ document.querySelector(".card__container").ondrag = function () {
 
 
 
+document.querySelector(".card__container_two").onmouseover = function(){
+  document.querySelector(".card__container_two").classList.add("leftSpaceRemove");
+}
+document.querySelector(".card__container_two").onmouseout = function(){
+  document.querySelector(".card__container_two").classList.remove("leftSpaceRemove");
+}
 
 

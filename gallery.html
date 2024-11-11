@@ -128,7 +128,7 @@
                 <img src="assets/images/about/i8.png" style="width: 100%" class="gallery-img" />
                 <img src="assets/images/about/i5.png" style="width: 100%" class="gallery-img" />
               </div>
-  
+
               <div class="gallery_column gallery_column2">
                 <img src="assets/images/about/i7.png" style="width: 100%" class="gallery-img" />
                 <img src="assets/images/about/i1.png" style="width: 100%" class="gallery-img" />
@@ -137,7 +137,7 @@
                 <img src="assets/images/about/i1.png" style="width: 100%" class="gallery-img" />
                 <img src="assets/images/gallery/g-1.png" style="width: 100%" class="gallery-img" />
               </div>
-  
+
               <div class="gallery_column gallery_column3">
                 <img src="assets/images/about/i2.png" style="width: 100%" class="gallery-img" />
                 <img src="assets/images/about/i5.png" style="width: 100%" class="gallery-img" />
@@ -146,7 +146,7 @@
                 <img src="assets/images/about/i5.png" style="width: 100%" class="gallery-img" />
                 <img src="assets/images/about/i8.png" style="width: 100%" class="gallery-img" />
               </div>
-  
+
               <div class="gallery_column gallery_column4">
                 <img src="assets/images/gallery/g-1.png" style="width: 100%" class="gallery-img" />
                 <img src="assets/images/about/i9.png" style="width: 100%" class="gallery-img" />
@@ -154,7 +154,7 @@
                 <img src="assets/images/gallery/g-1.png" style="width: 100%" class="gallery-img" />
                 <img src="assets/images/about/i9.png" style="width: 100%" class="gallery-img" />
                 <img src="assets/images/about/i6.png" style="width: 100%" class="gallery-img" />
-                
+
               </div>
             </div>
           </div>
@@ -166,31 +166,6 @@
           <div class="loadMoreBtnArea">
             <button id="load-more-img-button">Load More</button>
           </div>
-
-
-          <!-- <div class="row">
-            <div class="gallery_column">
-              <img src="assets/images/about/i2.png" style="width: 100%" class="gallery-img" />
-              <img src="assets/images/about/i8.png" style="width: 100%" class="gallery-img" />
-              <img src="assets/images/about/i5.png" style="width: 100%" class="gallery-img" />
-              <img src="assets/images/about/i7.png" style="width: 100%" class="gallery-img" />
-              <img src="assets/images/about/i1.png" style="width: 100%" class="gallery-img" />
-              <img src="assets/images/gallery/g-1.png" style="width: 100%" class="gallery-img" />
-              <img src="assets/images/about/i2.png" style="width: 100%" class="gallery-img" />
-              <img src="assets/images/about/i5.png" style="width: 100%" class="gallery-img" />
-              <img src="assets/images/about/i8.png" style="width: 100%" class="gallery-img" />
-              <img src="assets/images/gallery/g-1.png" style="width: 100%" class="gallery-img" />
-              <img src="assets/images/about/i9.png" style="width: 100%" class="gallery-img" />
-              <img src="assets/images/about/i6.png" style="width: 100%" class="gallery-img" />
-            </div>
-
-            <div class="loadMoreBtnArea">
-              <button id="load-more-img-button">Load More</button>
-            </div>
-          </div> -->
-
-
-
         </div>
       </div>
   </div>
@@ -245,7 +220,8 @@
 
 
               <div class="form-group">
-                <input id="phoneNumber" class="phoneNumber" type="tel" name="phone" placeholder="Phone number" required />
+                <input id="phoneNumber" type="number" class="phoneNumber" type="tel" name="phone"
+                  placeholder="Phone number" required />
               </div>
 
               <div class="form-group">
@@ -253,15 +229,20 @@
               </div>
 
               <div class="form-group">
-                <select name="programInterest" id="programInterest">
-                  <option value="" disabled selected>Program Interested in</option>
-                  <option value="Study & Trave">Study & Travel</option>
-                    <option value="Work & Travel">Work & Travel</option>
-                      <option value="Internship">Internship</option>
-                        <option value="Counselor">Counselor</option>
-                  
-                </select>
+                <div class="tag_container">
+                  <div id="selectedMajors"></div>
+                  <input type="text" id="majorInput" placeholder="Select major" list="majors" />
+                  <datalist id="majors">
+                    <option value="Computer Science"></option>
+                    <option value="Design"></option>
+                    <option value="Graphic Design"></option>
+                    <option value="Video Editing"></option>
+                    <!-- Add more options as needed -->
+                  </datalist>
+                </div>
+                
               </div>
+              
 
               <div class="form-group">
                 <select id="countries" class="countries">
@@ -380,7 +361,7 @@
   <script src="assets/js/gallery.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    
+
     // load more button
     let loadMoreImgBtn = document.querySelector("#load-more-img-button");
     let currentItems = 0;
