@@ -134,39 +134,38 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Form interested muliple selector
 document.addEventListener("DOMContentLoaded", function () {
-  const majorInput = document.getElementById("majorInput");
-  const selectedMajorsContainer = document.getElementById("selectedMajors");
-  const majorsList = new Set();
+  const programInput = document.getElementById("programInput");
+  const selectedProgramsContainer = document.getElementById("selectedPrograms");
+  const programsList = new Set();
 
   // Add a tag when user selects an option
-  majorInput.addEventListener("change", function () {
-    const selectedMajor = majorInput.value.trim();
+  programInput.addEventListener("change", function () {
+    const selectedProgram = programInput.value.trim();
 
-    // Check if the major is already added or if input is empty
-    if (selectedMajor && !majorsList.has(selectedMajor)) {
-      majorsList.add(selectedMajor);
-      addTag(selectedMajor);
+    // Check if the program is already added or if input is empty
+    if (selectedProgram && !programsList.has(selectedProgram)) {
+      programsList.add(selectedProgram);
+      addTag(selectedProgram);
     }
-    majorInput.value = ""; // Clear input after selection
+    programInput.value = ""; // Clear input after selection
   });
 
   // Function to add a tag to the container
-  function addTag(major) {
+  function addTag(program) {
     const tag = document.createElement("div");
-    tag.className = "tag";
-    tag.textContent = major;
+    tag.className = "program-tag";
+    tag.textContent = program;
 
     const removeBtn = document.createElement("span");
-    removeBtn.className = "remove-tag";
+    removeBtn.className = "remove-program-tag";
     removeBtn.textContent = "x";
     removeBtn.onclick = function () {
-      majorsList.delete(major);
+      programsList.delete(program);
       tag.remove();
     };
 
     tag.appendChild(removeBtn);
-    selectedMajorsContainer.appendChild(tag);
+    selectedProgramsContainer.appendChild(tag);
   }
 });

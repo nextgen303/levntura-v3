@@ -856,14 +856,16 @@
                   </div>
 
                   <div class="form-group">
-                    <select name="programInterest" id="programInterest">
-                      <option value="" disabled selected>Program Interested in</option>
-                      <option value="Study & Trave">Study & Travel</option>
-                      <option value="Work & Travel">Work & Travel</option>
-                      <option value="Internship">Internship</option>
-                      <option value="Counselor">Counselor</option>
-
-                    </select>
+                    <div class="interested-program-selector">
+                      <div class="selected-programs" id="selectedPrograms"></div>
+                      <input type="text" id="programInput" placeholder="Program interested in" list="programs" />
+                      <datalist id="programs">
+                        <option value="Computer Science"></option>
+                        <option value="Design"></option>
+                        <option value="Graphic Design"></option>
+                        <option value="Video Editing"></option>
+                      </datalist>
+                    </div>
                   </div>
 
                   <div class="form-group">
@@ -1233,7 +1235,45 @@
 
   <!-- Js file -->
   <script src="assets/js/main.js"></script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const programInput = document.getElementById("programInput");
+      const selectedProgramsContainer = document.getElementById("selectedPrograms");
+      const programsList = new Set();
 
+      // Add a tag when user selects an option
+      programInput.addEventListener("change", function () {
+        const selectedProgram = programInput.value.trim();
+
+        // Check if the program is already added or if input is empty
+        if (selectedProgram && !programsList.has(selectedProgram)) {
+          programsList.add(selectedProgram);
+          addTag(selectedProgram);
+        }
+        programInput.value = ""; // Clear input after selection
+      });
+
+      // Function to add a tag to the container
+      function addTag(program) {
+        const tag = document.createElement("div");
+        tag.className = "program-tag";
+        tag.textContent = program;
+
+        const removeBtn = document.createElement("span");
+        removeBtn.className = "remove-program-tag";
+        removeBtn.textContent = "x";
+        removeBtn.onclick = function () {
+          programsList.delete(program);
+          tag.remove();
+        };
+
+        tag.appendChild(removeBtn);
+        selectedProgramsContainer.appendChild(tag);
+      }
+    });
+
+  </script>
 
   
 </body>
