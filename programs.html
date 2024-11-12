@@ -841,7 +841,7 @@
               <div class="showcase_part_right hidden_for_mob">
                 <h2>LITTLE EFFORT, ULTIMATE EXPERIENCE.</h2>
 
-                <form action="#" method="post" class="programForm">
+                <form action="#" method="post" class="programForm" onsubmit="showSuccessMessage(event)">
                   <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Name" required />
                   </div>
@@ -877,7 +877,11 @@
                   <input class="submit_btn button--pallene" type="submit" value="Start Now!" />
                 </form>
 
+                <div class="success-message" id="successMessage">Submission Successful!</div>
+
+
                 <a href="" class="contact_us_btn">Contact US</a>
+
               </div>
             </div>
           </div>
@@ -889,7 +893,7 @@
           <div class="showcase_part_right pc_hidden">
             <h2>LITTLE EFFORT, ULTIMATE EXPERIENCE.</h2>
 
-            <form action="#" method="post" class="programForm">
+            <form action="#" method="post" class="programForm" onsubmit="showSuccessMessage(event)">
               <div class="form-group">
                 <input type="text" id="name" name="name" placeholder="Name" required />
               </div>
@@ -922,6 +926,8 @@
 
               <input class="submit_btn button--pallene" type="submit" value="Start Now!" />
             </form>
+
+            <div class="success-message" id="successMessage">Submission Successful!</div>
 
             <a href="" class="contact_us_btn">Contact US</a>
           </div>
@@ -1196,7 +1202,7 @@
               <p>Join Our Community To Receive Updates</p>
 
               <div class="email_container">
-                <form class="newsletter-form">
+                <form class="newsletter-form" onsubmit="showSuccessMessage(event)">
                   <div class="mail_box">
                     <input type="email" placeholder="Enter your email" required />
 
@@ -1206,6 +1212,8 @@
                   </div>
                   <button type="submit">Subscribe</button>
                 </form>
+
+                <div class="success-message" id="successMessage">Submission Successful!</div>
               </div>
             </div>
 

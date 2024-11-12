@@ -16,9 +16,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/apply.css" />
+  <link rel="stylesheet" href="assets/css/apply.css">
   <link rel="stylesheet" href="assets/css/resume.css">
-
   <link rel="stylesheet" href="assets/css/responsive.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
@@ -379,7 +378,7 @@
             </p>
           </div>
 
-          <form action="">
+          <form class="apply_sub_form" id="applyForm" onsubmit="showSuccessMessage(event)">
             <h3>Upload Your Cv</h3>
             <div class="main_upload_new">
               <div class="drop_zone_new" id="uploadBoxNew">
@@ -444,6 +443,9 @@
               </div>
             </div>
           </form>
+
+
+          <div class="success-message" id="successMessage">Submission Successful!</div>
         </div>
       </div>
     </div>
@@ -558,7 +560,7 @@
               <p>Join Our Community To Receive Updates</p>
 
               <div class="email_container">
-                <form class="newsletter-form">
+                <form class="newsletter-form" onsubmit="showSuccessMessage(event)">
                   <div class="mail_box">
                     <input type="email" placeholder="Enter your email" required />
 
@@ -568,6 +570,9 @@
                   </div>
                   <button type="submit">Subscribe</button>
                 </form>
+
+
+                <div class="success-message" id="successMessage">Submission Successful!</div>
               </div>
             </div>
 
@@ -594,7 +599,28 @@
   <script src="assets/js/swiper-bundle.min.js"></script>
   <!-- Js file -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/apply.js"></script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const applyForm = document.getElementById("applyForm");
+      const successMessage = document.getElementById("successMessage");
+
+      applyForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Show the success message
+        successMessage.style.display = "block";
+
+        // Hide the success message, reset form, and optionally reload the page
+        setTimeout(function () {
+          successMessage.style.display = "none"; // Hide success message
+          applyForm.reset(); // Reset form fields
+          location.reload(); // Reload the page, if needed
+        }, 3000); // 3 seconds delay
+      });
+    });
+  </script>
 </body>
 
 </html>

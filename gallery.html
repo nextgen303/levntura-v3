@@ -206,7 +206,7 @@
           <div class="form_right_container">
             <h2>LITTLE EFFORT, ULTIMATE EXPERIENCE.</h2>
 
-            <form id="login" onsubmit="process(event)" class="galleryForm">
+            <form id="login" onsubmit="process(event)" class="galleryForm" onsubmit="showSuccessMessage(event)">
               <div class="form-group">
                 <input type="text" id="name" name="name" placeholder="Name" required />
               </div>
@@ -252,6 +252,8 @@
 
               <input class="submit_btn button--pallene" type="submit" value="Start Now!" />
             </form>
+            
+            <div class="success-message" id="successMessage">Submission Successful!</div>
 
             <a href="" class="contact_us_btn">Contact US</a>
           </div>

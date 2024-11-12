@@ -940,3 +940,25 @@ document.getElementById("applyForm").addEventListener("submit", function (event)
     successMessage.style.display = "none";
   }, 3000);
 });
+
+
+function showSuccessMessage(event) {
+  event.preventDefault(); // Prevents actual form submission for demonstration
+  const successMessage = document.getElementById("successMessage");
+  
+  // Show the message
+  successMessage.style.display = "block";
+  
+  // Hide the message after a few seconds
+  setTimeout(() => {
+    successMessage.style.display = "none";
+  }, 2000);
+
+  // Clear the form fields after submission if needed
+  event.target.reset();
+}
+
+// Attach event listeners to all forms
+document.querySelectorAll("form").forEach((form) => {
+  form.addEventListener("submit", showSuccessMessage);
+});

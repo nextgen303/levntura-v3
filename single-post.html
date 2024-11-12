@@ -568,7 +568,7 @@
               <p>Join Our Community To Receive Updates</p>
 
               <div class="email_container">
-                <form class="newsletter-form">
+                <form class="newsletter-form" onsubmit="showSuccessMessage(event)">
                   <div class="mail_box">
                     <input type="email" placeholder="Enter your email" required />
 
@@ -578,6 +578,8 @@
                   </div>
                   <button type="submit">Subscribe</button>
                 </form>
+
+                <div class="success-message" id="successMessage">Submission Successful!</div>
               </div>
             </div>
 

@@ -533,7 +533,7 @@
         <div class="modal-content">
           <div class="form_main">
             <span class="close"></span>
-            <form id="regForm" action="" class="form_main_content">
+            <form id="regForm" action="" class="form_main_content" onsubmit="showSuccessMessage(event)">
               <div class="add_p">
                 <!-- Step 1 -->
                 <div class="step active">
@@ -705,9 +705,12 @@
                 </div>
               </div>
             </form>
+
+            <div class="success-message" id="successMessage">Submission Successful!</div>
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- ----------------------- Footer ---------------------- -->
@@ -770,7 +773,7 @@
               <p>Join Our Community To Receive Updates</p>
 
               <div class="email_container">
-                <form class="newsletter-form">
+                <form class="newsletter-form" onsubmit="showSuccessMessage(event)">
                   <div class="mail_box">
                     <input type="email" placeholder="Enter your email" required />
 
@@ -780,6 +783,8 @@
                   </div>
                   <button type="submit">Subscribe</button>
                 </form>
+
+                <div class="success-message" id="successMessage">Submission Successful!</div>
               </div>
             </div>
 
@@ -866,7 +871,6 @@
       // Initialize by showing the first step
       showStep(currentStep);
     });
-
   </script>
 </body>
 
