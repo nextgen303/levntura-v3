@@ -1,12 +1,11 @@
-
-
-// country code and flag 
+// country code and flag
 const phoneNumberInput = document.querySelectorAll(".phoneNumber");
 for (let i = 0; i < phoneNumberInput.length; i++) {
   const iti = window.intlTelInput(phoneNumberInput[i], {
     initialCountry: "auto",
     separateDialCode: true,
-    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
   });
   function process(event) {
     event.preventDefault();
@@ -14,27 +13,24 @@ for (let i = 0; i < phoneNumberInput.length; i++) {
     // Handle the phone number (e.g., send it to the server for verification)
     console.log("Phone number:", phoneNumber);
   }
-
 }
 
 // country add
-const countriesSelect = document.querySelectorAll('.countries');
+const countriesSelect = document.querySelectorAll(".countries");
 for (let i = 0; i < countriesSelect.length; i++) {
   // Fetch country data from an API (e.g., REST Countries API)
-  fetch('https://restcountries.com/v3.1/all')
+  fetch("https://restcountries.com/v3.1/all")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((country) => {
-        const option = document.createElement('option');
+        const option = document.createElement("option");
         option.value = country.name.common;
         option.textContent = country.name.common;
         countriesSelect[i].appendChild(option);
       });
     })
-    .catch((error) => console.error('Error fetching country data:', error));
+    .catch((error) => console.error("Error fetching country data:", error));
 }
-
-
 
 // Add Event on elements
 const addEventOnElem = function (elem, type, callback) {
@@ -105,13 +101,9 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const leftColumn = document.querySelector('.left_column');
-  const rightColumn = document.querySelector('.right_column');
+document.addEventListener("DOMContentLoaded", () => {
+  const leftColumn = document.querySelector(".left_column");
+  const rightColumn = document.querySelector(".right_column");
 
   let scrollSpeed = 1; // Adjust the speed here
 
@@ -123,13 +115,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let offset = 0;
 
     function scroll() {
-      if (direction === 'up') {
+      if (direction === "up") {
         offset -= scrollSpeed;
         if (offset <= -items[0].offsetHeight) {
           container.appendChild(items[0]); // Move first element to the end
           offset = 0;
         }
-      } else if (direction === 'down') {
+      } else if (direction === "down") {
         offset += scrollSpeed;
         if (offset >= items[0].offsetHeight) {
           container.appendChild(items[0]); // Move first element to the end
@@ -144,21 +136,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Start scrolling: left goes up, right goes down
-  infiniteScroll(leftColumn, 'up');
-  infiniteScroll(rightColumn, 'down');
+  infiniteScroll(leftColumn, "up");
+  infiniteScroll(rightColumn, "down");
 
   // Pause scrolling on hover
-  const pauseScrolling = () => scrollSpeed = 0;
-  const resumeScrolling = () => scrollSpeed = 1;
+  const pauseScrolling = () => (scrollSpeed = 0);
+  const resumeScrolling = () => (scrollSpeed = 1);
 
-  leftColumn.addEventListener('mouseover', pauseScrolling);
-  leftColumn.addEventListener('mouseout', resumeScrolling);
+  leftColumn.addEventListener("mouseover", pauseScrolling);
+  leftColumn.addEventListener("mouseout", resumeScrolling);
 
-  rightColumn.addEventListener('mouseover', pauseScrolling);
-  rightColumn.addEventListener('mouseout', resumeScrolling);
+  rightColumn.addEventListener("mouseover", pauseScrolling);
+  rightColumn.addEventListener("mouseout", resumeScrolling);
 });
-
-
 
 /*=============== Slider ===============*/
 
@@ -250,7 +240,7 @@ let swiperCards = new Swiper(".card__content", {
   },
 });
 
-const brandSlider = new Swiper('.brand_content', {
+const brandSlider = new Swiper(".brand_content", {
   loop: true,
   // autoplay: {
   //   delay: 0,
@@ -312,11 +302,7 @@ const brandSlider = new Swiper('.brand_content', {
       slidesPerView: 7,
     },
   },
-
 });
-
-
-
 
 /*=============== Slider ===============*/
 let programCards = new Swiper(".programs_card", {
@@ -337,7 +323,6 @@ let programCards = new Swiper(".programs_card", {
   },
 
   breakpoints: {
-
     200: {
       slidesPerView: 1.4,
     },
@@ -506,13 +491,11 @@ let knowledgeCards = new Swiper(".knowledge_image_content", {
   },
 });
 
-
-
-const videos = document.querySelectorAll('.videoElement');
+const videos = document.querySelectorAll(".videoElement");
 
 // Loop through each video and add the click event listener
 videos.forEach((video) => {
-  video.addEventListener('mouseover', () => {
+  video.addEventListener("mouseover", () => {
     // Check if the video is playing
     if (video.paused) {
       video.muted = false; // Unmute the video
@@ -523,7 +506,7 @@ videos.forEach((video) => {
     }
   });
 
-  video.addEventListener('mouseout', () => {
+  video.addEventListener("mouseout", () => {
     // Check if the video is playing
     if (video.play) {
       video.pause(); // Pause the video
@@ -723,8 +706,6 @@ let programFourCards = new Swiper(".programs_four_card", {
 
 /*=============== Slider ===============*/
 
-
-
 let programFiveCards = new Swiper(".programs_five_card", {
   loop: true,
   spaceBetween: 16,
@@ -780,7 +761,6 @@ let programFiveCards = new Swiper(".programs_five_card", {
     },
   },
 });
-
 
 /*=============== Slider ===============*/
 let programSevenCards = new Swiper(".programs_seven_card", {
@@ -880,8 +860,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
 function showPopup() {
   document.getElementById("popupForm").style.display = "flex";
 
@@ -934,21 +912,31 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-
 // program page full with slider
 document.querySelector(".card__container").ondrag = function () {
   document.querySelector(".card__container").style.overflow = "visible";
-}
+};
 
+document.querySelector(".card__container_two").onmouseover = function () {
+  document
+    .querySelector(".card__container_two")
+    .classList.add("leftSpaceRemove");
+};
+document.querySelector(".card__container_two").onmouseout = function () {
+  document
+    .querySelector(".card__container_two")
+    .classList.remove("leftSpaceRemove");
+};
 
+document.getElementById("applyForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevents actual submission for demo
+  const successMessage = document.getElementById("successMessage");
 
+  // Show the success message
+  successMessage.style.display = "block";
 
-document.querySelector(".card__container_two").onmouseover = function(){
-  document.querySelector(".card__container_two").classList.add("leftSpaceRemove");
-}
-document.querySelector(".card__container_two").onmouseout = function(){
-  document.querySelector(".card__container_two").classList.remove("leftSpaceRemove");
-}
-
-
+  // Hide the message after 3 seconds
+  setTimeout(function () {
+    successMessage.style.display = "none";
+  }, 3000);
+});

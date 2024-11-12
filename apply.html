@@ -420,7 +420,7 @@
               active employers
             </p>
           </div>
-          <form class="apply_sub_form">
+          <form class="apply_sub_form" id="applyForm">
             <h3>Upload Your Cv</h3>
             <div class="main_upload_new">
               <div class="drop_zone_new" id="uploadBoxNew">
@@ -488,6 +488,10 @@
         </div>
       </div>
     </div>
+
+    <div class="success-message" id="successMessage" style="display: none;">Application Sent Successfully!</div>
+
+    
 
 
     <!-- ----------------------- Footer ---------------------- -->
@@ -587,6 +591,29 @@
   <!-- Js file -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/apply.js"></script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const applyForm = document.getElementById("applyForm");
+  const successMessage = document.getElementById("successMessage");
+
+  applyForm.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Show the success message
+    successMessage.style.display = "block";
+
+    // Hide the success message, reset form, and optionally reload the page
+    setTimeout(function () {
+      successMessage.style.display = "none"; // Hide success message
+      applyForm.reset(); // Reset form fields
+      location.reload(); // Reload the page, if needed
+    }, 3000); // 3 seconds delay
+  });
+});
+
+  </script>
 </body>
 
 </html>
